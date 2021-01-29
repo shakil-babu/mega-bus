@@ -80,17 +80,22 @@ let bookNowBtn = document.getElementById('book-now').addEventListener('click', f
 		alert('Take your ticket!')
 	}else{
 		document.getElementById('book-completed').style.visibility='visible';
-		setTimeout(() => {
-			document.getElementById('book-completed').style.visibility='hidden';
-		}, 2000);
-
+		backHomeHandler();
 		firstClassInput.value = 0 ;
 		economyInput.value = 0 ;
 		document.getElementById('sub-total').innerText = '$'+0;
 		document.getElementById('ticket-vat').innerText = '$'+0 ;
 		document.getElementById('total-price').innerText = '$'+0; 
 	}
-})
+});
+
+// for back home
+function backHomeHandler(){
+	document.getElementById('back-home').addEventListener('click', function(){
+		document.getElementById('book-completed').style.visibility='hidden';
+		
+	})
+}
 
 
 
