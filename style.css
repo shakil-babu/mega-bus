@@ -12,6 +12,7 @@ body{
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
+   
 }
 nav{
     height: 50px;
@@ -49,6 +50,7 @@ nav ul li a:hover, a.active{
     grid-template-columns: 2fr 3fr;
     gap: 70px;
     align-items: center;
+    
 }
 .booking-content{
     color: #fff;
@@ -70,6 +72,7 @@ nav ul li a:hover, a.active{
     float: right;
     width: 80%;
     margin: 50px 0px 0px 80px;
+    
 }
 .booking-form h3{
     margin: 10px 0px;
@@ -137,6 +140,7 @@ nav ul li a:hover, a.active{
     color: #fff;
     font-weight: 500;
     background-color:  #52AF3A;
+    cursor:pointer;
 }
 .plus-minus-btn button:hover, .btn-style:hover{
     background-color:  #508b41fb;
@@ -144,4 +148,27 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+#book-completed{
+    height: 100vh;
+    width: 100%;
+    background:#52AF3A;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    
+}
+#book-completed i{
+    font-size: 100px;
+}
+
+#book-completed h4{
+    font-size: 50px;
 }
